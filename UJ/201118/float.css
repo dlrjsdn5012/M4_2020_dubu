@@ -1,0 +1,21 @@
+#list {
+  width: 1000px;
+  padding: 0;
+}
+#list li {
+  list-style: none;
+  background: olive;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+  float: left;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+}
+
+#comment {
+  font-size: 24px;
+  clear: both;
+}
