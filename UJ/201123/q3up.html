@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐구활동_3(레)</title>
+    <style>
+        button {
+        width:100px;
+        height:50px;
+        font-size:30px;
+        }
+        #traffic-lights {
+            background:#000;
+            width:500px;
+            height:100px;
+            padding:40px;
+            text-align:center;
+            margin-top:30px;
+        }
+        #traffic-lights span {
+            display:inline-block;
+            width:100px;
+            height:100px;
+            border-radius:100%;
+            margin:0 20px;
+        }
+        #green {
+            background:gray;
+        }
+        #yellow {
+            background:gray;
+        }
+        #red {
+            background:gray;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn-green" onclick="bgGreen()">초록</button>
+    <button type="button" id="btn-yellow" onclick="bgYellow()">노랑</button>
+    <button type="button" id="btn-red" onclick="bgRed()">빨강</button>
+
+    <div id="traffic-lights">
+        <span id="green"></span>
+        <span id="yellow"></span>
+        <span id="red"></span> 
+    </div>
+
+<script>
+
+    var toggled = false;
+
+    function bgGreen(){
+        if(!toggled){
+            toggled =true;
+            document.getElementById("green").style.backgroundColor = 'green';
+            return;
+        }
+        if(toggled) {
+            toggled = false;
+            document.getElementById("green").style.backgroundColor = 'gray';
+            return;
+        }
+    }
+
+
+
+    function bgYellow(){
+        if(!toggled){
+            toggled =true;
+            document.getElementById("yellow").style.backgroundColor = 'yellow';
+            return;
+        }
+        if(toggled) {
+            toggled = false;
+            document.getElementById("yellow").style.backgroundColor = 'gray';
+            return;
+        }
+    }
+
+    function bgRed(){
+        if(!toggled){
+            toggled =true;
+            document.getElementById("red").style.backgroundColor = 'red';
+            return;
+        }
+        if(toggled) {
+            toggled = false;
+            document.getElementById("red").style.backgroundColor = 'gray';
+            return;
+        }
+}
+</script>
+</body>
+</html>
