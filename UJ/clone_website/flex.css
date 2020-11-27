@@ -4,13 +4,13 @@ header{               /* 헤더 */
     padding: 35px;
     width: 1200px;
 }
-.header_itme{        /* 헤더 flex itme */
+.header_item{        /* 헤더 flex item */
     flex-grow: 1;
 }
 #nav_ul{            /* 헤더 리스트 ul */
     display: flex;
 }
-.nav_itme{          /* 헤더 리스트 */
+.nav_item{          /* 헤더 리스트 */
     flex-grow: 1;
 }
 
@@ -23,12 +23,9 @@ header{               /* 헤더 */
 }
 
 #contents{          /* contents container */
-    flex-grow: 1;
-    height: 500px;
-    width: 1000px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100px;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
 }
 
 footer{             /* footer container */
@@ -37,17 +34,17 @@ footer{             /* footer container */
 #footer_nav{
     display: flex;
 }
-.footer_itme{       /* footer flex itme */
+.footer_item{       /* footer flex item */
     flex-grow: 1;
 }
-.category{          /* footer itmes heading */
+.category{          /* footer items heading */
     display: block;
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 20px;
     color: white;
 }
-footer li a{          /* itme of lists */
+footer li a{          /* item of lists */
     font-size: 10px;
     text-decoration: none;
     color: white;
