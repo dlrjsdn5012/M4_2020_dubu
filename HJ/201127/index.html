@@ -8,10 +8,7 @@
     <style>
         #box {
             position: absolute;
-            /* margin-top: 100px; */
             line-height: 200px;
-            background-color: lightpink;
-            border: 18px solid indianred;
             width: 200px;
             height: 200px;
             text-align: center;
@@ -31,15 +28,30 @@
         <button id="speed-50">속도50</button>
         <button id="speed-100">속도100</button>
         <button id="speed-200">속도200</button>
+        <button id="btn-color">색상바꾸기</button>
     </div>
-    <div id="box">BOX</div>
+    <div id="box" style="background-color:red">
+        BOX
+    </div>
 
 
     <script>
         var line = 0
         var row = 0
         var speed = 0
-        var p = document.getElementById('box')
+        var box = document.getElementById('box')
+
+        function changecolor() {
+            var bgcolor = box.style.backgroundColor
+            if (bgcolor == 'red') {
+                box.style.backgroundColor = 'green'
+            }
+            else {
+                box.style.backgroundColor = 'red'
+            }
+        }
+
+
         //속도 지정하기
         document.getElementById('speed-50').addEventListener('click', function () {
             speed = 50
@@ -57,25 +69,29 @@
         document.getElementById('btn-right').addEventListener('click', function () {
             if (line < parseInt('1200px'))
                 line = line + speed
-            p.style.left = line + 'px'
+            box.style.left = line + 'px'
+            changecolor();
         });
 
         document.getElementById('btn-left').addEventListener('click', function () {
             if (line > parseInt('0px'))
                 line = line - speed
-            p.style.left = line + 'px'
+            box.style.left = line + 'px'
+            changecolor();
         });
 
         document.getElementById('btn-up').addEventListener('click', function () {
             if (row > parseInt('0px'))
                 row = row - speed
-            p.style.top = row + 'px'
+            box.style.top = row + 'px'
+            changecolor();
         });
 
         document.getElementById('btn-down').addEventListener('click', function () {
             if (row < parseInt('400px'))
                 row = row + speed
-            p.style.top = row + 'px'
+            box.style.top = row + 'px'
+            changecolor();
         });
 
         // 방향키로 움직이기
@@ -83,7 +99,8 @@
             if (event.keyCode === 40) {
                 if (row < parseInt('470px')) {
                     row = row + speed
-                    p.style.top = row + 'px'
+                    box.style.top = row + 'px'
+                    changecolor();
                 }
             }
         });
@@ -91,7 +108,8 @@
             if (event.keyCode === 38) {
                 if (row > parseInt('0px')) {
                     row = row - speed
-                    p.style.top = row + 'px'
+                    box.style.top = row + 'px'
+                    changecolor();
                 }
             }
         });
@@ -99,7 +117,8 @@
             if (event.keyCode === 39) {
                 if (line < parseInt('1200px')) {
                     line = line + speed
-                    p.style.left = line + 'px'
+                    box.style.left = line + 'px'
+                    changecolor();
                 }
             }
         });
@@ -107,8 +126,20 @@
             if (event.keyCode === 37) {
                 if (line > parseInt('0px')) {
                     line = line - speed
-                    p.style.left = line + 'px'
+                    box.style.left = line + 'px'
+                    changecolor();
                 }
+            }
+        });
+
+        // 색상바꾸기
+        document.getElementById('btn-color').addEventListener('click', function () {
+            var bgcolor = box.style.backgroundColor
+            if (bgcolor == 'red') {
+                box.style.backgroundColor = 'green'
+            }
+            else {
+                box.style.backgroundColor = 'red'
             }
         });
     </script>
