@@ -15,6 +15,17 @@
             font-size: 50px;
             color: black
         }
+
+        #box2 {
+            position: absolute;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: black;
+            left: 1200px;
+        }
     </style>
 </head>
 
@@ -33,6 +44,9 @@
     <div id="box" style="background-color:red">
         BOX
     </div>
+    <div id="box2" style="background-color: red">
+        BOX2
+    </div>
 
 
     <script>
@@ -41,28 +55,37 @@
         var speed = 0
         var box = document.getElementById('box')
 
-        function changecolor() {
-            var bgcolor = box.style.backgroundColor
+        function changecolor(arg) {
+            var bgcolor = document.getElementById(arg).style.backgroundColor
             if (bgcolor == 'red') {
-                box.style.backgroundColor = 'green'
-            }
-            else {
-                box.style.backgroundColor = 'red'
+                document.getElementById(arg).style.backgroundColor = 'green'
+            } else if (bgcolor == 'green') {
+                document.getElementById(arg).style.backgroundColor = 'yellow'
+            } else {
+                document.getElementById(arg).style.backgroundColor = 'red'
             }
         }
 
+        // 색상바꾸기 버튼
+        document.getElementById('btn-color').addEventListener('click', function () {
+            var bgcolor = box.style.backgroundColor
+            changecolor('box')
+        });
 
         //속도 지정하기
         document.getElementById('speed-50').addEventListener('click', function () {
             speed = 50
+            changecolor('box2')
         });
 
         document.getElementById('speed-100').addEventListener('click', function () {
             speed = 100
+            changecolor('box2')
         });
 
         document.getElementById('speed-200').addEventListener('click', function () {
             speed = 200
+            changecolor('box2')
         });
 
         // 버튼으로 움직이기
@@ -70,28 +93,28 @@
             if (line < parseInt('1200px'))
                 line = line + speed
             box.style.left = line + 'px'
-            changecolor();
+            changecolor('box')
         });
 
         document.getElementById('btn-left').addEventListener('click', function () {
             if (line > parseInt('0px'))
                 line = line - speed
             box.style.left = line + 'px'
-            changecolor();
+            changecolor('box')
         });
 
         document.getElementById('btn-up').addEventListener('click', function () {
             if (row > parseInt('0px'))
                 row = row - speed
             box.style.top = row + 'px'
-            changecolor();
+            changecolor('box')
         });
 
         document.getElementById('btn-down').addEventListener('click', function () {
             if (row < parseInt('400px'))
                 row = row + speed
             box.style.top = row + 'px'
-            changecolor();
+            changecolor('box')
         });
 
         // 방향키로 움직이기
@@ -100,7 +123,7 @@
                 if (row < parseInt('470px')) {
                     row = row + speed
                     box.style.top = row + 'px'
-                    changecolor();
+                    changecolor('box')
                 }
             }
         });
@@ -109,7 +132,7 @@
                 if (row > parseInt('0px')) {
                     row = row - speed
                     box.style.top = row + 'px'
-                    changecolor();
+                    changecolor('box')
                 }
             }
         });
@@ -118,7 +141,7 @@
                 if (line < parseInt('1200px')) {
                     line = line + speed
                     box.style.left = line + 'px'
-                    changecolor();
+                    changecolor('box')
                 }
             }
         });
@@ -127,21 +150,11 @@
                 if (line > parseInt('0px')) {
                     line = line - speed
                     box.style.left = line + 'px'
-                    changecolor();
+                    changecolor('box')
                 }
             }
         });
 
-        // 색상바꾸기
-        document.getElementById('btn-color').addEventListener('click', function () {
-            var bgcolor = box.style.backgroundColor
-            if (bgcolor == 'red') {
-                box.style.backgroundColor = 'green'
-            }
-            else {
-                box.style.backgroundColor = 'red'
-            }
-        });
     </script>
 </body>
 

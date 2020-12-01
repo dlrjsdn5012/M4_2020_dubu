@@ -1,0 +1,37 @@
+#head{              /* 거꾸로 캠퍼스 제목 */
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 50px;
+  margin-right: 230px;
+}
+#head a{            /* 거꾸로 캠퍼스 제목 a-Tag */
+  color: black;
+}
+
+.nav_item{          /* 헤더 ul - li */
+  color: black;
+}
+
+.nav_item a{          /* 헤더 ul - li - a */
+  color: black;
+  font-size: 14px;
+}
+
+#header_btn{        /* 헤더 색 바뀌는 버튼 */    
+  position: relative;
+  right: -180px;
+}
+
+#header_btn a{      /* 헤더 색 바뀌는 버튼 a-Tag */
+  border: 1px solid rgb(182, 182, 182);
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: border 0.5s, background-color 0.5s, color 0.5s;
+}
+
+#header_btn a:hover{    /* 헤더 색 바뀌는 버튼 hover */
+  background-color: rgb(8, 8, 190);
+  color: white;
+  border: 1px solid white;
+}

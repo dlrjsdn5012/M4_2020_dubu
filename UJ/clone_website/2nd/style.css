@@ -1,0 +1,184 @@
+#container {
+    display: flex;
+    flex-direction: column;
+}
+.center-container {
+    position: relative;
+    width: 1040px;
+    margin: 0 auto;
+}
+.header-container {
+    position: relative;
+}
+header h1 {
+    position: absolute;
+    left: -300px;
+    top: 30px;
+    font-size: 25px;
+}
+header a {
+    padding: 0px 8px;
+}
+header nav {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    text-align: center;
+    top: 30px;
+}
+header .button {
+position: absolute;
+right: -300px;
+top: 30px;
+display: block;
+width: 200px;
+height: 35px;
+line-height: 35px;
+text-align: center;
+border: 1px solid;
+} 
+/* layout */
+/* header */
+header {
+height: 100px;
+width: auto;
+background-color: white;
+}
+#XMas {
+    position: fixed;
+    top: 0px;
+}
+/* main */
+main {
+height: 2830px;
+}
+.jm {
+text-align: center;
+font-size: 23px;
+padding: 40px;
+}
+.bm {
+text-align: center;
+padding-bottom: 40px;
+font-size: 13px;
+}
+#case {
+    display: flex;
+    flex-direction:row;
+}
+#case1 {
+/* background-color: rgb(0, 0, 180); */
+color: white;
+font-size: 14px;
+padding: 20px ;
+flex-grow: 1;
+float: left;
+}
+#case2 {
+/* background-color: #000088; */
+color: white;
+font-size: 14px;
+padding: 20px ;
+flex-grow: 1;
+float: left;
+}
+#case3 {
+/* background-color:  rgb(0, 0, 180); */
+color: white;
+font-size: 14px;
+padding: 20px ;
+flex-grow: 1;
+float: left;
+}
+.bogi {
+position: relative;
+top: 50px;
+}
+#gisa {
+    position: relative;
+    width: 1040px;
+}
+.gisa1,.gisa2,.gisa3,.gisa4,.gisa5,.gisa6 {
+    display: flex;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 7px;
+}
+.gisa1 {
+    padding-top: 60px;
+}
+.gray {
+    color: rgb(161, 161, 161);
+    padding-right: 10px;
+}
+#gisa .date {
+    color: rgb(161, 161, 161);
+    position: absolute;
+    right: 0px;
+}
+#list {
+    width:1040px;
+    padding:0px;
+}
+#list li {
+    list-style:none;
+    background-color: rgb(243, 243, 243);
+    text-align:left;
+    box-sizing:border-box;
+    margin: 10px;
+    float: left;
+    width: 326px;
+    height: 350px;
+}
+#list img {
+    width: 326px;
+    height: 185px;
+}
+#list .jm1 {
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: normal;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+#list .bm1 {
+    padding: 0px 20px;
+    text-align: left;
+    font-size: 12px;
+    line-height: normal;
+}
+/* footer */
+footer {
+/* background-color: #000088; */
+padding: 30px 30px 30px 30px;
+}
+#box {
+    display: flex;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.box1,.box2,.box3,.box4,.box5,.box6 {
+    padding: 20px 40px 30px 40px;
+}
+#jhonwha {
+padding-top: 10px;
+color: white;
+font-size: 10px;
+text-align: center;
+}
+.icon {
+    display: flex;
+    padding-top: 30px;
+}
+.facebook {
+position: relative;
+left: 450px;
+}
+.instagram {
+    position: relative;
+    left: 480px;
+}
+.youtube {
+    position: relative;
+    left: 510px;
+}
