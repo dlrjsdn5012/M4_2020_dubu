@@ -182,3 +182,7 @@ left: 450px;
     position: relative;
     left: 510px;
 }
+#XMas2 {
+    position: fixed;
+    top: 28px;
+}
