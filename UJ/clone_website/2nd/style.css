@@ -39,6 +39,7 @@ text-align: center;
 border: 1px solid;
 } 
 /* layout */
+
 /* header */
 header {
 height: 100px;
@@ -95,23 +96,23 @@ float: left;
 position: relative;
 top: 50px;
 }
-#gisa {
+#article {
     position: relative;
     width: 1040px;
 }
-.gisa1,.gisa2,.gisa3,.gisa4,.gisa5,.gisa6 {
+.article1,.article2,.article3,.article4,.article5,.article6 {
     display: flex;
-    border-bottom: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid gray;
     padding: 7px;
 }
-.gisa1 {
+.article1 {
     padding-top: 60px;
 }
 .gray {
     color: rgb(161, 161, 161);
     padding-right: 10px;
 }
-#gisa .date {
+#article .date {
     color: rgb(161, 161, 161);
     position: absolute;
     right: 0px;
@@ -160,7 +161,7 @@ padding: 30px 30px 30px 30px;
 .box1,.box2,.box3,.box4,.box5,.box6 {
     padding: 20px 40px 30px 40px;
 }
-#jhonwha {
+#contact {
 padding-top: 10px;
 color: white;
 font-size: 10px;
