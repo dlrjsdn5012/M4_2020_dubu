@@ -5,12 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1204_최종결과물</title>
+  <script src="./index.js"></script>
   <style>
     #container {
-      background-color: gray;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: #2D3E98;
+      padding: 10px 25px 10px 25px;
+    }
+    .darkBlue {
+      background-color: #001255;
+    }
+    .title {
+      color: white;
+      font-weight: bold;
+    }
+    .content {
+      color: white;
+      font-size: 13px;
+    }
+    .learnMore {
+      color: white;
+      margin-top: 100px;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -19,34 +41,6 @@
   <div id="container"></div>
 
   </div>
-  <script>
-    window.onload = function () {
-      const boxdata = [
-        {
-          'title': '배움의 원칙',
-          'content': '거꾸로캠퍼스가 실현하는 21세기 배움의 원칙 아홉 가지', 'learnMore': '자세히 보기 →'
-        },
-        {
-          'title': '교육과정',
-          'content': '거꾸로캠퍼스의 교육 과정과 교육 프로그램에 대한 안내', 'learnMore': '자세히 보기 →'
-        },
-        {
-          'title': '학교생활',
-          'content': '거꾸로캠퍼스를 만들어가는 학생과 교사들의 이야기',
-          'learnMore': '자세히 보기 →'
-        }
-      ]
-
-      for (const index in boxdata) {
-        const bbb = document.createElement('div');
-        bbb.classList.add('box');
-        bbb.innerText = JSON.stringify(boxdata[0]);
-        if ((index % 2) != 0) { bbb.classList.add('darkBlue') };
-        document.querySelector('#container').appendChild(bbb);
-
-      }
-    }
-  </script>
 </body>
 
 </html>
