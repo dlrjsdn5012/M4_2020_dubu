@@ -1,4 +1,4 @@
-# 2020_M4_dubu
+# 2020_M4_dubu - C.lab
 ## Git & GitHub
 - __Git이란 무엇인가?__ 
 <img src="https://miro.medium.com/max/910/1*BCZkmZR1_YzDZy22Vn4uUw.png" width="400">
